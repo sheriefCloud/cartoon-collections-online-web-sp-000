@@ -25,7 +25,7 @@ def find_the_cheese(array)
   i=0
   while i < cheese_types.length
     array.include?(cheese_types[i])
-    puts cheese_types[i]
+    cheese = cheese_types[i]
     binding.pry
     i += 1
     end
