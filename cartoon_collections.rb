@@ -1,3 +1,5 @@
+require 'pry'
+
 def roll_call_dwarves(dwarves)
   i=0
   while i < dwarves.length
@@ -21,10 +23,12 @@ def find_the_cheese(array)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   i=0
-  while i < cheese_types.length do
-    array.include?(cheese_types[i])
-  end
-  i += 1
+  while i < cheese_types.length
+    if array.include?(cheese_types[i])
+    return cheese_types[i]
+
+    end
+    i += 1
   end
 
 end
